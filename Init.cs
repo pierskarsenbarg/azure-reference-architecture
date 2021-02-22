@@ -7,7 +7,13 @@ namespace azure_reference_architecture
     {
         public Init()
         {
-            var baseinfra = new BaseInfrastructure();
+            // var baseinfra = new BaseInfrastructure();
+            var azureConfig = new Pulumi.Config("azure");
+            var resourceGroup = new ResourceGroup("pk-resourcegroup", new ResourceGroupArgs
+            {
+                Location = azureConfig.Get("location") ?? "uksouth",
+                ResourceGroupName = Output.Format($"pk-resourcename")
+            });
         }
     }
 }
