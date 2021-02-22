@@ -1,4 +1,5 @@
 using Pulumi;
+using Pulumi.AzureNextGen.Resources.Latest;
 
 namespace azure_reference_architecture
 {
@@ -6,7 +7,7 @@ namespace azure_reference_architecture
     {
         public Init()
         {
-            var baseInfra = new Base();
+            var baseinfra = new BaseInfrastructure();
         }
     }
 }

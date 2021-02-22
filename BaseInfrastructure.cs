@@ -4,9 +4,9 @@ using Pulumi.Random;
 
 namespace azure_reference_architecture
 {
-    public class Base : Stack
+    public class BaseInfrastructure : Stack
     {
-        public Base()
+        public BaseInfrastructure()
         {
             var azureConfig = new Pulumi.Config("azure");
             var resourceGroup = new ResourceGroup("pk-resourcegroup", new ResourceGroupArgs
