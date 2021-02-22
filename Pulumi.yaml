@@ -1,0 +1,3 @@
+name: azure-reference-architecture
+runtime: dotnet
+description: Reference architecture for azure in csharp

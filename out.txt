@@ -1,0 +1,97 @@
+I0222 13:35:28.632910   40916 backend.go:410] found username for access token
+I0222 13:35:29.509442   40916 backend.go:410] found username for access token
+I0222 13:35:29.711788   40916 ignore.go:44] Explicitly ignoring and discarding error: no git repository found from /Users/piers/github.com/pierskarsenbarg/azure-reference-architecture/Pulumi.yaml
+I0222 13:35:29.931882   40916 backend.go:410] found username for access token
+I0222 13:35:29.931763   40916 backend.go:917] Stack dev being updated to version 1
+I0222 13:35:30.298177   40916 plugins.go:77] gatherPluginsFromProgram(): gathering plugins from language host
+I0222 13:35:30.299274   40916 plugins.go:588] GetPluginPath(language, dotnet, <nil>): found on $PATH /Users/piers/.pulumi/bin/pulumi-language-dotnet
+I0222 13:35:30.299421   40916 plugin.go:124] Launching plugin 'dotnet' from '/Users/piers/.pulumi/bin/pulumi-language-dotnet' with args: 127.0.0.1:49809
+I0222 13:35:30.329467   40916 langruntime_plugin.go:178] langhost[dotnet].GetPluginInfo() executing
+I0222 13:35:30.330158   40916 langruntime_plugin.go:91] langhost[dotnet].GetRequiredPlugins(proj=azure-reference-architecture,pwd=/Users/piers/github.com/pierskarsenbarg/azure-reference-architecture,program=.) executing
+I0222 13:35:30.332158   40916 eventsink.go:70] eventSink::Info(<{%reset%}>running 'dotnet build -nologo .'<{%reset%}>)
+I0222 13:35:31.037504   40916 eventsink.go:70] eventSink::Info(<{%reset%}>  Determining projects to restore...
+<{%reset%}>)
+I0222 13:35:31.279610   40916 eventsink.go:70] eventSink::Info(<{%reset%}>  All projects are up-to-date for restore.
+<{%reset%}>)
+I0222 13:35:31.619713   40916 eventsink.go:70] eventSink::Info(<{%reset%}>  azure-reference-architecture -> /Users/piers/github.com/pierskarsenbarg/azure-reference-architecture/bin/Debug/netcoreapp3.1/azure-reference-architecture.dll
+<{%reset%}>)
+I0222 13:35:31.633553   40916 eventsink.go:70] eventSink::Info(<{%reset%}>
+Build succeeded.
+<{%reset%}>)
+I0222 13:35:31.633912   40916 eventsink.go:70] eventSink::Info(<{%reset%}>    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.97
+<{%reset%}>)
+I0222 13:35:31.657942   40916 eventsink.go:70] eventSink::Info(<{%reset%}>'dotnet build -nologo .' completed successfully<{%reset%}>)
+I0222 13:35:32.841333   40916 langruntime_plugin.go:133] langhost[dotnet].GetRequiredPlugins(proj=azure-reference-architecture,pwd=/Users/piers/github.com/pierskarsenbarg/azure-reference-architecture,program=.) success: #versions=1
+I0222 13:35:32.841402   40916 plugins.go:89] gatherPluginsFromProgram(): plugin dotnet <nil> () is required by language host
+I0222 13:35:32.841428   40916 plugins.go:89] gatherPluginsFromProgram(): plugin azure-nextgen 0.6.1 () is required by language host
+I0222 13:35:32.841960   40916 plugins.go:101] gatherPluginsFromSnapshot(): gathering plugins from snapshot
+I0222 13:35:32.841974   40916 plugins.go:133] ensurePluginsAreInstalled(): beginning
+I0222 13:35:32.842109   40916 plugins.go:588] GetPluginPath(language, dotnet, <nil>): found on $PATH /Users/piers/.pulumi/bin/pulumi-language-dotnet
+I0222 13:35:32.842124   40916 plugins.go:138] ensurePluginsAreInstalled(): plugin dotnet <nil> already installed
+I0222 13:35:32.980659   40916 plugins.go:627] GetPluginPath(resource, azure-nextgen, 0.6.1): enabling new plugin behavior
+I0222 13:35:32.981575   40916 plugins.go:709] SelectCompatiblePlugin(..., azure-nextgen): beginning
+I0222 13:35:32.981700   40916 plugins.go:742] SelectCompatiblePlugin(..., azure-nextgen): skipping plugin azure-nextgen-0.3.1: semver mismatch
+I0222 13:35:32.981712   40916 plugins.go:742] SelectCompatiblePlugin(..., azure-nextgen): skipping plugin azure-nextgen-0.4.0: semver mismatch
+I0222 13:35:32.981721   40916 plugins.go:742] SelectCompatiblePlugin(..., azure-nextgen): skipping plugin azure-nextgen-0.6.0: semver mismatch
+I0222 13:35:32.981729   40916 plugins.go:738] SelectCompatiblePlugin(..., azure-nextgen): best plugin azure-nextgen-0.6.1: semver match
+I0222 13:35:32.981737   40916 plugins.go:751] SelectCompatiblePlugin(..., azure-nextgen): selecting plugin 'azure-nextgen-0.6.1': best match 
+I0222 13:35:32.981777   40916 plugins.go:674] GetPluginPath(resource, azure-nextgen, 0.6.1): found in cache at /Users/piers/.pulumi/plugins/resource-azure-nextgen-v0.6.1/pulumi-resource-azure-nextgen
+I0222 13:35:32.981797   40916 plugins.go:138] ensurePluginsAreInstalled(): plugin azure-nextgen 0.6.1 already installed
+I0222 13:35:32.981804   40916 plugins.go:153] ensurePluginsAreInstalled(): completed
+I0222 13:35:32.981816   40916 plugins.go:241] computeDefaultProviderPlugins(): considering dotnet
+I0222 13:35:32.982375   40916 plugins.go:244] computeDefaultProviderPlugins(): skipping dotnet, not a resource provider
+I0222 13:35:32.982383   40916 plugins.go:241] computeDefaultProviderPlugins(): considering azure-nextgen-0.6.1
+I0222 13:35:32.982397   40916 plugins.go:272] computeDefaultProviderPlugins(): plugin azure-nextgen-0.6.1 selected for package azure-nextgen (first seen)
+I0222 13:35:32.982407   40916 plugins.go:278] computeDefaultProviderPlugins(): summary of default plugins:
+I0222 13:35:32.982413   40916 plugins.go:280]   azure-nextgen   = 0.6.1
+I0222 13:35:32.982859   40916 step_generator.go:838] stepGenerator.GeneratePendingDeletes(): scanning previous snapshot for pending deletes
+I0222 13:35:32.983933   40916 deployment_executor.go:400] deploymentExecutor.retirePendingDeletes(...): no pending deletions
+I0222 13:35:32.983551   40916 langruntime_plugin.go:144] langhost[dotnet].Run(pwd=/Users/piers/github.com/pierskarsenbarg/azure-reference-architecture,program=.,#args=0,proj=azure-reference-architecture,stack=dev,#config=0,dryrun=true) executing
+I0222 13:35:32.984049   40916 deployment_executor.go:221] deploymentExecutor.Execute(...): waiting for incoming events
+I0222 13:35:32.984586   40916 step_executor.go:327] StepExecutor worker(-2): worker coming online
+I0222 13:35:32.984630   40916 step_executor.go:327] StepExecutor worker(-2): worker waiting for incoming chains
+I0222 13:35:34.751912   40916 source_eval.go:537] ResourceMonitor.SupportsFeature(id: resourceReferences) = true
+I0222 13:35:34.789803   40916 source_eval.go:873] ResourceMonitor.RegisterResource received: t=pulumi:pulumi:Stack, name=azure-reference-architecture-dev, custom=false, #props=0, parent=, protect=false, provider=, deps=[], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[], customTimeouts={0 0 0}
+I0222 13:35:34.791449   40916 source_eval.go:158] EvalSourceIterator produced a registration: t=pulumi:pulumi:Stack,name=azure-reference-architecture-dev,#props=0
+I0222 13:35:34.791468   40916 deployment_executor.go:225] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0222 13:35:34.791480   40916 deployment_executor.go:371] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0222 13:35:34.792248   40916 step_generator.go:499] Planner decided to create 'urn:pulumi:dev::azure-reference-architecture::pulumi:pulumi:Stack::azure-reference-architecture-dev' (inputs=map[])
+I0222 13:35:34.792660   40916 step_executor.go:327] StepExecutor worker(-2): worker received chain for execution
+I0222 13:35:34.792671   40916 step_executor.go:327] StepExecutor worker(-2): worker waiting for incoming chains
+I0222 13:35:34.793031   40916 step_executor.go:327] StepExecutor worker(0): launching oneshot worker
+I0222 13:35:34.793101   40916 step_executor.go:327] StepExecutor worker(0): applying step create on urn:pulumi:dev::azure-reference-architecture::pulumi:pulumi:Stack::azure-reference-architecture-dev (preview true)
+I0222 13:35:34.793134   40916 step_executor.go:327] StepExecutor worker(0): step create on urn:pulumi:dev::azure-reference-architecture::pulumi:pulumi:Stack::azure-reference-architecture-dev retired
+I0222 13:35:34.793148   40916 source_eval.go:950] stripping unknowns from RegisterResource response for urn urn:pulumi:dev::azure-reference-architecture::pulumi:pulumi:Stack::azure-reference-architecture-dev
+I0222 13:35:34.793157   40916 source_eval.go:960] ResourceMonitor.RegisterResource operation finished: t=pulumi:pulumi:Stack, urn=urn:pulumi:dev::azure-reference-architecture::pulumi:pulumi:Stack::azure-reference-architecture-dev, #outs=0
+I0222 13:35:34.807868   40916 eventsink.go:59] Fields to assign: ["urn"]
+I0222 13:35:34.807909   40916 eventsink.go:62] eventSink::Debug(<{%reset%}>Fields to assign: ["urn"]<{%reset%}>)
+I0222 13:35:34.810769   40916 eventsink.go:59] Registering resource start: t=pulumi:pulumi:Stack, name=azure-reference-architecture-dev, custom=False, remote=False
+I0222 13:35:34.810812   40916 eventsink.go:62] eventSink::Debug(<{%reset%}>Registering resource start: t=pulumi:pulumi:Stack, name=azure-reference-architecture-dev, custom=False, remote=False<{%reset%}>)
+I0222 13:35:34.811244   40916 eventsink.go:59] Preparing resource: t=pulumi:pulumi:Stack, name=azure-reference-architecture-dev, custom=False, remote=False
+I0222 13:35:34.811285   40916 eventsink.go:62] eventSink::Debug(<{%reset%}>Preparing resource: t=pulumi:pulumi:Stack, name=azure-reference-architecture-dev, custom=False, remote=False<{%reset%}>)
+I0222 13:35:34.811542   40916 eventsink.go:59] Prepared resource: t=pulumi:pulumi:Stack, name=azure-reference-architecture-dev, custom=False, remote=False
+I0222 13:35:34.811563   40916 eventsink.go:62] eventSink::Debug(<{%reset%}>Prepared resource: t=pulumi:pulumi:Stack, name=azure-reference-architecture-dev, custom=False, remote=False<{%reset%}>)
+I0222 13:35:34.811861   40916 eventsink.go:59] Registering resource monitor start: t=pulumi:pulumi:Stack, name=azure-reference-architecture-dev, custom=False, remote=False
+I0222 13:35:34.811884   40916 eventsink.go:62] eventSink::Debug(<{%reset%}>Registering resource monitor start: t=pulumi:pulumi:Stack, name=azure-reference-architecture-dev, custom=False, remote=False<{%reset%}>)
+I0222 13:35:34.812142   40916 eventsink.go:59] Registering resource monitor end: t=pulumi:pulumi:Stack, name=azure-reference-architecture-dev, custom=False, remote=False
+I0222 13:35:34.812165   40916 eventsink.go:62] eventSink::Debug(<{%reset%}>Registering resource monitor end: t=pulumi:pulumi:Stack, name=azure-reference-architecture-dev, custom=False, remote=False<{%reset%}>)
+I0222 13:35:34.816218   40916 source_eval.go:873] ResourceMonitor.RegisterResource received: t=pulumi:pulumi:Stack, name=azure-reference-architecture-dev, custom=false, #props=0, parent=, protect=false, provider=, deps=[], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[], customTimeouts={0 0 0}
+I0222 13:35:34.816294   40916 source_eval.go:158] EvalSourceIterator produced a registration: t=pulumi:pulumi:Stack,name=azure-reference-architecture-dev,#props=0
+I0222 13:35:34.816315   40916 deployment_executor.go:225] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0222 13:35:34.816321   40916 deployment_executor.go:371] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0222 13:35:34.816335   40916 eventsink.go:86] eventSink::Error(<{%reset%}>Duplicate resource URN 'urn:pulumi:dev::azure-reference-architecture::pulumi:pulumi:Stack::azure-reference-architecture-dev'; try giving it a unique name<{%reset%}>)
+I0222 13:35:34.816355   40916 step_executor.go:327] StepExecutor worker(-1): StepExecutor.waitForCompletion(): waiting for worker threads to exit
+I0222 13:35:34.816365   40916 step_executor.go:327] StepExecutor worker(-2): worker exiting due to cancellation
+I0222 13:35:34.816372   40916 step_executor.go:327] StepExecutor worker(-1): StepExecutor.waitForCompletion(): worker threads all exited
+I0222 13:35:34.816784   40916 deployment_executor.go:261] deploymentExecutor.Execute(...): step executor has completed
+I0222 13:35:34.816830   40916 deployment_executor.go:132] deploymentExecutor.Execute(...): exiting provider canceller
+I0222 13:35:34.816973   40916 langruntime_plugin.go:164] langhost[dotnet].Run(pwd=/Users/piers/github.com/pierskarsenbarg/azure-reference-architecture,program=.,...,dryrun=true) failed: err=transport is closing
+I0222 13:35:34.816994   40916 ignore.go:44] Explicitly ignoring and discarding error: rpc error: code = Canceled desc = grpc: the client connection is closing
+I0222 13:35:34.827081   40916 ignore.go:44] Explicitly ignoring and discarding error: 1 error occurred:
+	* operation not permitted
+
+I0222 13:35:34.827175   40916 source_eval.go:178] EvalSourceIterator ended with an error: transport is closing
+I0222 13:35:34.827189   40916 deployment_executor.go:206] deploymentExecutor.Execute(...): incoming events goroutine exiting
